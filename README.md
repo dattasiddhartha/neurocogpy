@@ -5,6 +5,6 @@ Currently supports loading, tabling, visualization and statistical learning meth
 
 * Installation
 
-...
+<code>
 git clone https://github.com/dattasiddhartha/neurocogpy.git
-...
+</code>
