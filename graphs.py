@@ -31,3 +31,9 @@ def Periodicity(col):
     result = seasonal_decompose(series, model='additive',freq=3001)
     result.plot()
     plt.show()
+    
+def CondensedVisualization(dir2, matfile, column_name):
+    from scipy.io import loadmat
+    testnet = loadmat(os.path.join(dir2, matfile))
+    testnet[column_name][:,:,0].T
+    plt.plot(testnet[column_name][:,:,0].T)

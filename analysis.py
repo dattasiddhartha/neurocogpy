@@ -4,6 +4,9 @@ import matplotlib.pyplot as plt
 import time
 from sklearn.model_selection import train_test_split
 from sklearn.naive_bayes import GaussianNB, BernoulliNB, MultinomialNB
+from sklearn.tree import DecisionTreeClassifier
+
+# gnb = DecisionTreeClassifier()
 
 def FiveElectrodeNaiveBayes(outcome_column_name):
     buttonpress_events_hg_e1=[]

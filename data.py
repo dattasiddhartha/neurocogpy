@@ -19,3 +19,11 @@ def Parser(dir2, mat_file, col):
     eeg_data['col1']=col1
     return eeg_data
 
+def MatToJson(dir2, mat_file, col):
+    df11 = loadmat(os.path.join(dir2, mat_file))
+    eeg_data=pd.DataFrame()
+    col1=[]
+    for i in range(len(df11['buttonpress_events_hg'])):
+        col1.append(col[i])
+    eeg_data['col1']=col1
+    eeg_data.to_json('s08_data.json')
