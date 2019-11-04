@@ -20,8 +20,11 @@ git clone https://github.com/dattasiddhartha/neurocogpy.git
 * Examples
 
 Loading data
+
 <code>
+    
 from neurocogpy import load
+
 data = load.Parser(dir, 's08_ofc_hg_events.mat')
 </code>
 
@@ -48,4 +51,4 @@ Actual Safe                   7              10
 </code>
 
 
-_Library adapted from and used for [Value-based decision-making predictions through time-series ECoG signal models](https://github.com/dattasiddhartha/DataX-NeuralDecisionMaking)_
+_Library built for [Value-based decision-making predictions through time-series ECoG signal models, a Data-X UC Berkeley project.](https://github.com/dattasiddhartha/DataX-NeuralDecisionMaking)_
