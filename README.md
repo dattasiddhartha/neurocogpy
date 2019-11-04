@@ -29,24 +29,21 @@ data = load.Parser(dir, 's08_ofc_hg_events.mat')
 
 
 Generates matrix of graphs representing each electrode at each time step
+
 <code>
 from neurocogpy import graphs
+    
 graphs.Visualizer(column_name, eeg_datafile)
 </code>
+
 ![img](/images/ts_image.PNG)
 
 Run models tailored to ECoG data and class-based decision-making tasks
+
 <code>
 from neurocogpy import models
+    
 model = ModelBundle(X, Y)
-</code>
-<code>
-    ......\n
-Confusion matrix of test data is: 
-                Predicted Gamble  Predicted Safe\n
-Actual Gamble                18               5\n
-Actual Safe                   7              10\n
-    ....
 </code>
 
 
