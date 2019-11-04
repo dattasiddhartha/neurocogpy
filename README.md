@@ -21,8 +21,7 @@ git clone https://github.com/dattasiddhartha/neurocogpy.git
 
 Loading data
 
-<code>
-    
+<code>  
 from neurocogpy import load
 
 data = load.Parser(dir, 's08_ofc_hg_events.mat')
@@ -42,11 +41,11 @@ from neurocogpy import models
 model = ModelBundle(X, Y)
 </code>
 <code>
-    ......
+    ......\n
 Confusion matrix of test data is: 
-                Predicted Gamble  Predicted Safe
-Actual Gamble                18               5
-Actual Safe                   7              10
+                Predicted Gamble  Predicted Safe\n
+Actual Gamble                18               5\n
+Actual Safe                   7              10\n
     ....
 </code>
 
